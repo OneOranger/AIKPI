@@ -1,0 +1,35 @@
+{
+  "platform": {
+    "name": "AI KPI Platform",
+    "version": "1.0.0",
+    "language": "zh-CN",
+    "timezone": "Asia/Shanghai"
+  },
+  "defaults": {
+    "currency": "USD",
+    "cost_threshold_alert": 5000,
+    "accuracy_threshold_warning": 90.0,
+    "accuracy_threshold_critical": 85.0,
+    "latency_threshold_ms": 2000,
+    "default_model": "gpt5"
+  },
+  "data_retention": {
+    "events_days": 90,
+    "alerts_days": 365,
+    "experiments_days": 180
+  },
+  "features": {
+    "auto_routing": true,
+    "llm_judge": true,
+    "ab_testing": true,
+    "cost_optimization": true,
+    "real_time_monitoring": true
+  },
+  "integrations": {
+    "slack_webhook": "",
+    "email_notifications": true,
+    "webhook_url": ""
+  },
+  "theme": "dark",
+  "notifications": true
+}

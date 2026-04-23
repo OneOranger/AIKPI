@@ -1,0 +1,12 @@
+[
+  {"id":"ah_001","rule_id":"rule_001","level":"critical","title":"HR 机器人准确率降至 78%","project":"内部 HR 机器人","detail":"准确率 78.0%，低于阈值 85%。建议立即检查 Prompt 或切换模型。","resolved":false,"triggered_at":"2026-04-20T14:48:00Z"},
+  {"id":"ah_002","rule_id":"rule_002","level":"warning","title":"RAG 召回率持续下降（−6% / 24小时）","project":"RAG / 知识检索","detail":"召回率 24 小时内下降 6%，从 89.6% 降至 83.6%。","resolved":false,"triggered_at":"2026-04-20T14:22:00Z"},
+  {"id":"ah_003","rule_id":"rule_006","level":"info","title":"自动切换 8% 流量至 DeepSeek V3.2（节省 $182）","project":"营销内容引擎","detail":"智能路由将低优先级请求切换至 DeepSeek V3.2，节省 $182/天。","resolved":true,"triggered_at":"2026-04-20T13:00:00Z"},
+  {"id":"ah_004","rule_id":"rule_003","level":"warning","title":"DeepSeek V3 P95 延迟升至 1280ms","project":"内部 HR 机器人","detail":"P95 延迟 1280ms，超过 2 秒阈值的 64%。","resolved":true,"triggered_at":"2026-04-20T10:15:00Z"},
+  {"id":"ah_005","rule_id":"rule_004","level":"warning","title":"客服助手日成本突增 42%","project":"客服助手","detail":"日成本 $412，高于 7 天均值 $290 的 142%。","resolved":true,"triggered_at":"2026-04-20T06:30:00Z"},
+  {"id":"ah_006","rule_id":"rule_005","level":"critical","title":"Llama 4 幻觉率升至 5.2%","project":"代码审查助手","detail":"幻觉率 5.2%，超过 5% 阈值。","resolved":true,"triggered_at":"2026-04-19T22:00:00Z"},
+  {"id":"ah_007","rule_id":"rule_002","level":"warning","title":"Gemini 2.5 成功率降至 99.5%","project":"RAG / 知识检索","detail":"成功率 99.5%，略低于 99.8% 正常水平。","resolved":true,"triggered_at":"2026-04-19T18:45:00Z"},
+  {"id":"ah_008","rule_id":"rule_006","level":"info","title":"GPT-5 出现 3 次 429 响应","project":"客服助手","detail":"3 分钟内检测到 3 次 429，未达到 5 次告警阈值。","resolved":true,"triggered_at":"2026-04-19T14:20:00Z"},
+  {"id":"ah_009","rule_id":"rule_001","level":"critical","title":"HR 机器人准确率降至 81%（首次触发）","project":"内部 HR 机器人","detail":"准确率 81.0%，首次低于 85% 阈值。","resolved":true,"triggered_at":"2026-04-18T09:00:00Z"},
+  {"id":"ah_010","rule_id":"rule_003","level":"warning","title":"Claude 4.5 P95 延迟升至 1150ms","project":"销售外呼 AI","detail":"P95 延迟 1150ms，接近 2 秒阈值。","resolved":true,"triggered_at":"2026-04-17T20:30:00Z"}
+]

@@ -1,0 +1,8 @@
+[
+  {"id":"proj_001","name":"客服助手","env":"生产","calls":842104,"cost":6210.8,"roi":412,"status":"健康","trend":"+18%","models":["GPT-5","Claude 4.5 Sonnet"],"accuracy":94.2,"created_at":"2025-12-01"},
+  {"id":"proj_002","name":"营销内容引擎","env":"生产","calls":524389,"cost":4120.2,"roi":287,"status":"健康","trend":"+9%","models":["GPT-5"],"accuracy":92.1,"created_at":"2026-01-15"},
+  {"id":"proj_003","name":"RAG / 知识检索","env":"生产","calls":412910,"cost":3088.4,"roi":196,"status":"警告","trend":"−4%","models":["Claude 4.5 Sonnet","Gemini 2.5 Pro"],"accuracy":89.6,"created_at":"2026-01-20"},
+  {"id":"proj_004","name":"代码审查助手","env":"预发布","calls":281440,"cost":2104.6,"roi":154,"status":"健康","trend":"+22%","models":["Gemini 2.5 Pro"],"accuracy":90.7,"created_at":"2026-02-10"},
+  {"id":"proj_005","name":"销售外呼 AI","env":"生产","calls":218902,"cost":1620.9,"roi":318,"status":"健康","trend":"+11%","models":["Claude 4.5 Sonnet"],"accuracy":91.8,"created_at":"2026-02-28"},
+  {"id":"proj_006","name":"内部 HR 机器人","env":"生产","calls":142087,"cost":612.1,"roi":92,"status":"严重","trend":"−12%","models":["DeepSeek V3.2"],"accuracy":78.0,"created_at":"2026-03-05"}
+]

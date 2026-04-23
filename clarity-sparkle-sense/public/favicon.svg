@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84c"/>
+      <stop offset="100%" style="stop-color:#f0d78c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#0a0a0a" stroke="url(#goldGradient)" stroke-width="2"/>
+  
+  <!-- Bar chart bars -->
+  <rect x="22" y="55" width="10" height="20" rx="2" fill="url(#goldGradient)" opacity="0.6"/>
+  <rect x="36" y="40" width="10" height="35" rx="2" fill="url(#goldGradient)" opacity="0.8"/>
+  <rect x="50" y="30" width="10" height="45" rx="2" fill="url(#goldGradient)" filter="url(#glow)"/>
+  <rect x="64" y="45" width="10" height="30" rx="2" fill="url(#goldGradient)" opacity="0.8"/>
+  
+  <!-- Pulse line overlay -->
+  <polyline points="17,65 27,55 41,50 55,35 69,45 83,40" 
+            fill="none" 
+            stroke="#f0d78c" 
+            stroke-width="2.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round"
+            filter="url(#glow)"/>
+  
+  <!-- Data points -->
+  <circle cx="27" cy="55" r="2.5" fill="#f0d78c"/>
+  <circle cx="41" cy="50" r="2.5" fill="#f0d78c"/>
+  <circle cx="55" cy="35" r="3" fill="#f0d78c" filter="url(#glow)"/>
+  <circle cx="69" cy="45" r="2.5" fill="#f0d78c"/>
+  <circle cx="83" cy="40" r="2.5" fill="#f0d78c"/>
+</svg>

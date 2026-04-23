@@ -1,0 +1,62 @@
+[
+  {
+    "id": "user_001",
+    "name": "Alice Chen",
+    "email": "alice@aikpi.com",
+    "role": "admin",
+    "avatar": "AC",
+    "status": "active",
+    "last_login": "2026-04-20T14:30:00Z",
+    "created_at": "2025-11-15T00:00:00Z"
+  },
+  {
+    "id": "user_002",
+    "name": "Marc Wang",
+    "email": "marc@aikpi.com",
+    "role": "editor",
+    "avatar": "MW",
+    "status": "active",
+    "last_login": "2026-04-20T12:00:00Z",
+    "created_at": "2026-01-10T00:00:00Z"
+  },
+  {
+    "id": "user_003",
+    "name": "Bob Zhang",
+    "email": "bob@aikpi.com",
+    "role": "viewer",
+    "avatar": "BZ",
+    "status": "active",
+    "last_login": "2026-04-19T18:00:00Z",
+    "created_at": "2026-02-20T00:00:00Z"
+  },
+  {
+    "id": "user_004",
+    "name": "Eva Li",
+    "email": "eva@aikpi.com",
+    "role": "viewer",
+    "avatar": "EL",
+    "status": "inactive",
+    "last_login": "2026-03-15T09:00:00Z",
+    "created_at": "2026-03-01T00:00:00Z"
+  },
+  {
+    "id": "user_33f1e2",
+    "name": "Test User",
+    "email": "test@test.com",
+    "role": "viewer",
+    "avatar": "https://example.com/avatar.png",
+    "status": "active",
+    "last_login": null,
+    "created_at": "2026-04-21T07:14:29.956070"
+  },
+  {
+    "id": "user_62082d",
+    "name": "Test User",
+    "email": "test@test.com",
+    "role": "viewer",
+    "avatar": "https://example.com/avatar.png",
+    "status": "active",
+    "last_login": null,
+    "created_at": "2026-04-21T07:15:58.272831"
+  }
+]

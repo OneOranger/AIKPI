@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Pulse — Modern SaaS dark theme inspired by Linear/Vercel */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 4%;              /* near-black canvas */
+    --foreground: 40 20% 96%;           /* warm off-white */
+
+    --surface: 0 0% 6%;                 /* card base */
+    --surface-elevated: 0 0% 9%;        /* hover / elevated */
+    --surface-muted: 0 0% 11%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 40 20% 96%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 20% 96%;
+
+    /* Brand — champagne gold */
+    --primary: 43 55% 54%;              /* #c9a84c */
+    --primary-foreground: 0 0% 6%;
+    --primary-glow: 43 80% 70%;         /* #f0d78c */
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 40 6% 56%;
+
+    --accent: 43 55% 54%;
+    --accent-foreground: 0 0% 6%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 40 20% 96%;
+
+    --success: 142 60% 50%;
+    --warning: 35 90% 58%;
+    --info: 210 90% 62%;
+
+    --border: 0 0% 14%;
+    --border-strong: 0 0% 20%;
+    --input: 0 0% 14%;
+    --ring: 43 55% 54%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 55% 54%), hsl(43 80% 70%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 7%) 0%, hsl(0 0% 5%) 100%);
+    --gradient-glow: radial-gradient(600px circle at 50% 0%, hsl(43 55% 54% / 0.08), transparent 70%);
+
+    /* Shadows */
+    --shadow-card: 0 1px 0 0 hsl(0 0% 100% / 0.04) inset, 0 0 0 1px hsl(0 0% 100% / 0.03);
+    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.6), 0 0 0 1px hsl(0 0% 100% / 0.04);
+    --shadow-glow: 0 0 40px -10px hsl(43 55% 54% / 0.4);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 40 8% 70%;
+    --sidebar-primary: 43 55% 54%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 0 0% 9%;
+    --sidebar-accent-foreground: 40 20% 96%;
+    --sidebar-border: 0 0% 11%;
+    --sidebar-ring: 43 55% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-feature-settings: "cv11", "ss01", "ss03";
+    font-size: 18px !important;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Tabular numerals for all data */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(0 0% 100% / 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(0 0% 100% / 0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  }
+
+  .ring-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+  .animate-pulse-dot { animation: pulse-dot 1.8s ease-in-out infinite; }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, hsl(43 55% 54% / 0.15), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+  }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fade-up 0.5s ease-out both; }
+}
